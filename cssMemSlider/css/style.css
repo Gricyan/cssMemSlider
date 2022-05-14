@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #222;
+  --color-text: #eee;
+  --content-width-desktop: 1040px;
+  --content-width-tablet: 768px;
+  --content-width-mobile: 414px;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.header-container,
+.main-container,
+.footer-container {
+  width: var(--content-width-desktop);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-and-git a {  
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.rs-logo {
+  max-width: 100px;
+}
+
