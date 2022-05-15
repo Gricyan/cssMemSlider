@@ -10,27 +10,60 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>
-    <div class="header-container">
+  <header class="header-container">
       <h1>cssMemSlider</h1>    
-    </div>    
   </header>
-  <main>
-    <div class="main-container">
-      <div class="slider">
-        cssMemSlider
-      </div>
-    </div>    
-  </main>
-  <footer>
-    <div class="footer-container">
-          <div class="date-and-git">
-            <p class="date">© 2022</p>
-            <p><a class="git" href="https://github.com/Gricyan" target="_blank">My github</a></p>
+ 
+  <main class="slider-container"> 
+
+    <input type="radio" name="meme-slider" id="item_1">
+    <input type="radio" name="meme-slider" id="item_2">
+    <input type="radio" name="meme-slider" id="item_3">
+    <input type="radio" name="meme-slider" id="item_4"> 
+
+    <div class="slider__viewport">
+        <div class="slider">
+          <div class="slide slide_1">
+            <div class="meme meme_1"></div>
           </div>
-          <img class="rs-logo" src="./assets/icons/rs_school_js.svg" alt="RS School logo">
+          <div class="slide">
+            <div class="meme meme_2"></div>
+          </div>
+          <div class="slide">
+            <div class="meme meme_3"></div>
+          </div>
+          <div class="slide">
+            <div class="meme meme_4"></div>
+          </div>           
+        </div>
+      </div>
+      
+    <div class="slider__dashboard">
+
+      <div class="slider__statements"> 
+        <div class="slider__statements-container">        
+          <div class="slider__text text_1" id="text_1">Git it first...</div>
+          <div class="slider__text" id="text_2">When you lied in your CV but got the job anyway</div>
+          <div class="slider__text" id="text_3">Young and friendly team, spacious office, good location, cookies</div>
+          <div class="slider__text" id="text_4">HR meets a meme slider in my portfolio</div>
+        </div>
+      </div>
+      <div class="slider__buttons">
+        <label for="item_1"><div class="btn"></div></label>
+        <label for="item_2"><div class="btn"></div></label>
+        <label for="item_3"><div class="btn"></div></label>
+        <label for="item_4"><div class="btn"></div></label>           
+      </div>
+      
     </div>
+  </main>   
+  <footer class="footer-container">
+    <div class="date-and-git">
+      <p class="date">© 2022</p>
+      <p><a class="git" href="https://github.com/Gricyan" target="_blank">My github</a></p>
+    </div>
+    <div class="rs-logo"></div>   
   </footer>
-  <script src="./js/script.js"></script>
+    
 </body>
 </html>
